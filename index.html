@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <h1>Try JavaScript Out</h1> <br><br>
+
+    <p id="demo">I am addicted to enjoyment</p> <br><br>
+
+    <button type="button" 
+    onclick='myFunction()'>Click to See</button> <br>
+
+
+    
+
+    <script src="script.js"></script>
+    
+     <div class="num">
+
+    <form action="#" onsubmit="return validate();" class="inp">
+        Your PhoneNumber: <br>
+        <input type="text" name="Phone Number" id="Input your PhoneNumber" class="phon"> <br><br>
+        <button class="sub">
+        Enter! 
+    </button>
+    </form>
+</div>
+    
+    <script>
+
+function validate() {
+            var input_text = document.getElementById("Input your PhoneNumber");    
+
+            if  ((input_text.value).length > 11) {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+            if  (input_text.value == "") {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+            if  ((input_text.value).length < 11) {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+            if  (isNaN(input_text.value)) {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+        
+            
+             
+            
+                alert("Valid!!!");
+                return true;
+        }
+    </script>
+
+</body>
+</html>

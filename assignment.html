@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#" onsubmit="return validate();">
+        Your PhoneNumber: <br>
+        <input type="text" name="idNumber" id="Input your PhoneNumber"> <br><br>
+        <input type="submit" value="Submit"> 
+    </form>
+
+    <script>
+        function validate() {
+            var input_text = document.getElementById("Input your PhoneNumber");    
+
+            if  ((input_text.value).length > 11) {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+            if  (input_text.value == "") {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+            if  ((input_text.value).length < 11) {
+                alert("Invalid PhoneNumber");
+                return false;
+            }
+        
+            
+             
+            
+                alert("Valid!!!");
+                return true;
+                                  
+
+        }
+    </script>
+    
+</body>
+</html>
